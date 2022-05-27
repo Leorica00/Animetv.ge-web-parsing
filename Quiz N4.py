@@ -19,8 +19,6 @@ for i in range(1, 8):
     for anime in all_animes:
         img_url = "https://animetv.night-city.online" + anime.a.img.attrs.get("src")
         img_url.replace("original", "")
-        # series = anime.find("div", class_="movie-item__label")
-        # series_numb = str(series.text) აქ / არის გამოყოგილი რამდენი სერია გამოვიდა და არის დადებული და აღიქვამს როგორც თარიღს არ ვიცი როგორ გავასწორო ამიტომ ამოვიღე
         title_bar_translate = anime.find("div", class_="movie-item__title")
         anime_name_translate = title_bar_translate.text
         title_bar = anime.find("div", class_="movie-item__meta ws-nowrap")

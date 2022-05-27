@@ -25,4 +25,5 @@ for i in range(1, 8):
         anime_name = title_bar.span.text
         file_obj.writerow([anime_name_translate, anime_name, img_url])
     time.sleep(random.randint(15, 20))
+    #
 file.close()
